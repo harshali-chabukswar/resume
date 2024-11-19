@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            margin: 0;
+        }
+
+        .relative{
+            background-color: aqua;
+            width:220px;
+            height:600px;
+         
+        }
+  
+        .absolute{
+            position: absolute;
+            width:220px;
+            height: 800px;
+            background-color: rgb(44, 46, 46);
+  
+        }
+
+
+        .fixed{
+            position:fixed;
+            width:60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgb(42, 136, 81);
+            right: 1%;
+            bottom: 3%;
+
+        }
+
+        @media (max-width:600px) {
+
+              
+        .absolute{
+            position: absolute;
+            width:120px;
+            height: 400px;
+            background-color: rgb(44, 46, 46);
+  
+        }
+
+
+
+            .fixed{
+            height: 30px;
+            width:30px;
+            bottom: 5%;
+            }
+            
+        }
+
+        @media (max-width:400px) {
+
+            .fixed{
+            height: 10px;
+            width:10px;
+            }
+        
+        }
+
+
+
+    </style>
+</head>
+<body>
+    
+
+
+        <div class="relative">
+    
+        </div>
+
+     
+    
+        <div class="absolute">
+        </div>
+    
+        <a href="#"><div class="fixed"></div></a>
+
+
+
+    
+
+     
+
+
+
+
+</body>
+</html>
